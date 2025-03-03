@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Slider</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <link href="https://unpkg.com/photoswipe@5.2.2/dist/photoswipe.css" rel="stylesheet" />
+
+  <link rel="stylesheet" type="text/css" href="example_2_style.css" />
+</head>
+
+<body>
+
+  <div class="pill-badges">
+    <span class="badge rounded-pill bg-warning text-dark"><a href="index.html">Example 1</a></span>
+    <span class="badge rounded-pill bg-success"><a href="example_2_index.html">Example 2</a></span>
+  </div>
+
+
+  <div class="content-wrapper" id="content-wrapper">
+    <div class="column">
+      <div class="img-container" id="img-container">
+        <a href="images/shoe1.jpg" data-pswp-width="2500" data-pswp-height="1667" id="featured-link">
+          <img class="featured" id="featured" src="images/shoe1.jpg" />
+        </a>
+      </div>
+
+      <!-- Gallery Section -->
+      <div class="gallery-container" id="gallery">
+        <a href="images/shoe1.jpg" data-pswp-width="2500" data-pswp-height="1667">
+          <img src="images/shoe1.jpg" alt="Thumbnail 1" class="thumbnail" />
+        </a>
+        <a href="images/shoe2.jpg" data-pswp-width="1669" data-pswp-height="2500">
+          <img src="images/shoe2.jpg" alt="Thumbnail 2" class="thumbnail" />
+        </a>
+        <a href="images/shoe3.jpg" data-pswp-width="2500" data-pswp-height="1666">
+          <img src="images/shoe3.jpg" alt="Thumbnail 3" class="thumbnail" />
+        </a>
+      </div>
+    </div>
+
+    <div class="column">
+      <h1>Awesome Shoes</h1>
+      <hr />
+      <h3>$89.99</h3>
+
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+        has been the industry's standard dummy text ever since the 1500s, when an unknown
+        printer took a galley of type and scrambled it to make a type specimen book.
+      </p>
+
+      <input value="1" type="number" />
+      <a class="btn btn-dark" href="#">Add to Cart</a>
+    </div>
+  </div>
+
+  <!-- PhotoSwipe Gallery -->
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="pswp__bg"></div>
+    <div class="pswp__scroll-wrap">
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+      <div class="pswp__ui pswp__ui--hidden">
+        <div class="pswp__top-bar">
+          <button class="pswp__button pswp__button--close"></button>
+          <button class="pswp__button pswp__button--zoom"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="example_2_slider.js"></script>
+</body>
+
+</html>
